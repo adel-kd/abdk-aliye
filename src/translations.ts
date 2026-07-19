@@ -15,7 +15,7 @@ export const translations: TranslationStrings = {
   },
   booking: {
     en: "Surprise Bookings",
-    am: "አስገራሚ ፕሮግራሞች",
+    am: "ሰርፕራይዝ ፕሮግራሞች",
   },
   blog: {
     en: "Blog",
@@ -31,7 +31,7 @@ export const translations: TranslationStrings = {
   },
   bookNow: {
     en: "Book a Surprise Performance",
-    am: "አስገራሚ ፕሮግራም ይያዙ",
+    am: "ሰርፕራይዝ ፕሮግራም ይያዙ",
   },
   aboutArtist: {
     en: "About Abdulkarim Aliye",
