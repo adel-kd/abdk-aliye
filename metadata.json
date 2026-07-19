@@ -1,0 +1,6 @@
+{
+  "name": "ABDK Music School & Serenade",
+  "description": "Premium personal website and business portal for Abdulkarim Aliye (Abdk), featuring a music academy, surprise booking services, and interactive media.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
