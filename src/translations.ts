@@ -39,7 +39,7 @@ export const translations: TranslationStrings = {
   },
   heroTagline: {
     en: "ABDK Music School and Surprising",
-    am: "አብዱ ሙዚቃ ትምህርት ቤት እና አስገራሚ ፕሮግራሞች",
+    am: "ABDK ሙዚቃ ትምህርት ቤት እና Surprising ፕሮግራሞች",
   },
   studentsTaught: {
     en: "Students Taught",
@@ -47,15 +47,15 @@ export const translations: TranslationStrings = {
   },
   songsCovered: {
     en: "Songs Covered",
-    am: "የተሰሩ ሙዚቃዎች",
+    am: "Cover ሙዚቃዎች",
   },
   eventsHosted: {
     en: "Events Hosted",
     am: "የተዘጋጁ ፕሮግራሞች",
   },
   calcTitle: {
-    en: "Pricing Calculator",
-    am: "የዋጋ ማስያ",
+    en: "Tell us about your event program.",
+    am: "ስለ ፕሮግራሙ ይንገሩን",
   },
   eventType: {
     en: "Event Type",

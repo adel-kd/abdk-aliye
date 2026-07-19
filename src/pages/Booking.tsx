@@ -24,7 +24,7 @@ export const Booking = () => {
   const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
 
   const toggleAddon = (id: string) => {
-    setSelectedAddons(prev => 
+    setSelectedAddons(prev =>
       prev.includes(id) ? prev.filter(a => a !== id) : [...prev, id]
     );
   };
@@ -38,14 +38,11 @@ export const Booking = () => {
   }, [eventType, duration, selectedAddons]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="max-w-7xl mx-auto px-4 py-32">
       <div className="grid lg:grid-cols-2 gap-16 items-start">
         {/* Left Side: Content */}
         <div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 text-amber-600 text-sm font-bold mb-6">
-            <Star className="w-4 h-4 fill-amber-600" />
-            Premium Surprise Services
-          </div>
+
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
             Make Your Moments <br />
             <span className="text-amber-600">Unforgettable</span>
@@ -53,7 +50,7 @@ export const Booking = () => {
           <p className="text-lg text-gray-600 mb-10 leading-relaxed">
             ABDK and his specialized Serenade team organize high-end live unannounced musical surprises. From intimate proposals to large-scale birthday celebrations, we bring the soul of acoustic music to your doorstep.
           </p>
-          
+
           <div className="space-y-6">
             <div className="flex gap-4 p-6 bg-white border border-gray-100 rounded-3xl shadow-sm">
               <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">
@@ -77,15 +74,13 @@ export const Booking = () => {
         </div>
 
         {/* Right Side: Calculator Widget */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-[2.5rem] border border-gray-100 shadow-2xl p-8 md:p-10"
         >
           <div className="flex items-center gap-3 mb-10">
-            <div className="p-2 bg-amber-600 rounded-xl text-white">
-              <Calculator className="w-6 h-6" />
-            </div>
+
             <h3 className="text-2xl font-bold text-gray-900">{t('calcTitle')}</h3>
           </div>
 
@@ -100,8 +95,8 @@ export const Booking = () => {
                     onClick={() => setEventType(type.id)}
                     className={cn(
                       "px-4 py-3 rounded-2xl text-sm font-semibold transition-all border text-left",
-                      eventType === type.id 
-                        ? "bg-amber-600 text-white border-amber-600 shadow-lg shadow-amber-200" 
+                      eventType === type.id
+                        ? "bg-amber-600 text-white border-amber-600 shadow-lg shadow-amber-200"
                         : "bg-gray-50 text-gray-600 border-transparent hover:border-gray-200"
                     )}
                   >
@@ -117,10 +112,10 @@ export const Booking = () => {
                 <label className="block text-sm font-bold text-gray-900 uppercase tracking-wider">{t('duration')}</label>
                 <span className="text-amber-600 font-bold bg-amber-50 px-3 py-1 rounded-full">{duration} {duration === 1 ? 'Hour' : 'Hours'}</span>
               </div>
-              <input 
-                type="range" 
-                min="1" 
-                max="5" 
+              <input
+                type="range"
+                min="1"
+                max="5"
                 step="0.5"
                 value={duration}
                 onChange={(e) => setDuration(parseFloat(e.target.value))}
@@ -145,8 +140,8 @@ export const Booking = () => {
                       onClick={() => toggleAddon(addon.id)}
                       className={cn(
                         "w-full flex items-center gap-4 p-4 rounded-2xl border transition-all text-left",
-                        isSelected 
-                          ? "bg-amber-50 border-amber-200" 
+                        isSelected
+                          ? "bg-amber-50 border-amber-200"
                           : "bg-white border-gray-100 hover:border-gray-200"
                       )}
                     >

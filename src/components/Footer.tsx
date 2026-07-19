@@ -13,10 +13,10 @@ export const Footer = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <img 
-                src="https://res.cloudinary.com/ddntf1cdt/image/upload/v1784316613/Screenshot_from_2026-07-17_22-21-34_zc8ejq.png" 
-                alt="Logo" 
-                className="h-10 w-auto" 
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/065/394/979/non_2x/illustration-of-two-golden-music-notes-isolated-on-transparent-background-png.png"
+                alt="Logo"
+                className="h-10 w-auto"
               />
               <span className="text-xl font-bold tracking-tighter text-gray-900">ABDK</span>
             </Link>
@@ -27,7 +27,7 @@ export const Footer = () => {
               <a href="https://www.instagram.com/abd.kmusic" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-amber-50 hover:text-amber-600 transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.youtube.com/@abd.kmusic" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-amber-50 hover:text-amber-600 transition-all">
+              <a href="https://www.tiktok.com/@abd.k4" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-amber-50 hover:text-amber-600 transition-all">
                 <Youtube className="w-5 h-5" />
               </a>
               <a href="https://t.me/+251987428747" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-amber-50 hover:text-amber-600 transition-all">
@@ -87,8 +87,8 @@ export const Footer = () => {
             © {currentYear} ABDK Music School & Serenade. All Rights Reserved.
           </p>
           <div className="flex gap-8">
-            <a href="#" className="text-gray-400 text-xs hover:text-gray-600 transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400 text-xs hover:text-gray-600 transition-colors">Terms of Service</a>
+            <Link to="/privacy-policy" className="text-gray-400 text-xs hover:text-gray-600 transition-colors">Privacy Policy</Link>
+            <Link to="/terms-and-conditions" className="text-gray-400 text-xs hover:text-gray-600 transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

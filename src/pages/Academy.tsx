@@ -12,7 +12,7 @@ const courses = [
     duration: { en: "3 Months", am: "3 ወራት" },
     level: { en: "Beginner", am: "ጀማሪ" },
     price: "ETB 2,500/mo",
-    highlights: { 
+    highlights: {
       en: ["Finger placement", "Strumming patterns", "Basic Tizita scales", "Rhythm exercises"],
       am: ["የጣት አቀማመጥ", "አመታት", "የትዝታ ቅኝቶች", "የምት ልምምድ"]
     }
@@ -24,7 +24,7 @@ const courses = [
     duration: { en: "4 Months", am: "4 ወራት" },
     level: { en: "Intermediate", am: "መካከለኛ" },
     price: "ETB 3,000/mo",
-    highlights: { 
+    highlights: {
       en: ["Breath control", "Vocal range expansion", "Ethiopian vibrato", "Ear training"],
       am: ["የአተነፋፈስ ቁጥጥር", "የድምፅ ክልልን ማስፋት", "የኢትዮጵያ ዜማ", "የጆሮ ስልጠና"]
     }
@@ -35,7 +35,7 @@ const courses = [
     description: { en: "Learn stage presence and advanced arrangement for professional performers.", am: "ለፕሮፌሽናል ተዋንያን የመድረክ ዝግጅት እና የላቀ አደረጃጀትን ይማሩ።" },
     duration: { en: "6 Months", am: "6 ወራት" },
     level: { en: "Advanced", am: "ከፍተኛ" },
-    highlights: { 
+    highlights: {
       en: ["Stage presence", "Live arrangement", "Complex improvisations", "Recording prep"],
       am: ["የመድረክ ብቃት", "የቀጥታ ዝግጅት", "ውስብስብ ጨዋታዎች", "የመዝገብ ዝግጅት"]
     }
@@ -64,11 +64,9 @@ export const Academy = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="max-w-7xl mx-auto px-4 py-32">
       <div className="text-center mb-16">
-        <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-amber-100 text-amber-600 mb-6">
-          <GraduationCap className="w-8 h-8" />
-        </div>
+
         <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('academy')}</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Enroll in ABDK Music School and start your journey towards musical excellence with personalized guidance from the master himself.
@@ -91,10 +89,10 @@ export const Academy = () => {
                 {course.duration[language]}
               </div>
             </div>
-            
+
             <h3 className="text-2xl font-bold text-gray-900 mb-4">{course.title[language]}</h3>
             <p className="text-gray-600 mb-8 flex-grow">{course.description[language]}</p>
-            
+
             <div className="space-y-3 mb-8">
               {course.highlights[language].map((h: string, idx: number) => (
                 <div key={idx} className="flex items-center gap-2 text-sm text-gray-700">
@@ -132,7 +130,7 @@ export const Academy = () => {
               className="relative bg-white w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden"
             >
               <div className="p-8">
-                <button 
+                <button
                   onClick={() => setSelectedCourse(null)}
                   className="absolute top-6 right-6 p-2 text-gray-400 hover:text-gray-900 transition-colors"
                 >
@@ -170,7 +168,7 @@ export const Academy = () => {
                       <div className="grid grid-cols-2 gap-4">
                         <div>
                           <label className="block text-sm font-bold text-gray-700 mb-2">Skill Level</label>
-                          <select 
+                          <select
                             className="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none"
                             value={formData.skillLevel}
                             onChange={(e) => setFormData({ ...formData, skillLevel: e.target.value })}
@@ -182,7 +180,7 @@ export const Academy = () => {
                         </div>
                         <div>
                           <label className="block text-sm font-bold text-gray-700 mb-2">Batch Timing</label>
-                          <select 
+                          <select
                             className="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none"
                             value={formData.timing}
                             onChange={(e) => setFormData({ ...formData, timing: e.target.value })}
@@ -192,7 +190,7 @@ export const Academy = () => {
                           </select>
                         </div>
                       </div>
-                      
+
                       <button
                         type="submit"
                         className="w-full py-4 bg-amber-600 text-white font-bold rounded-2xl shadow-lg shadow-amber-200 hover:bg-amber-700 transition-all mt-4"
@@ -210,7 +208,7 @@ export const Academy = () => {
                     <p className="text-gray-600 mb-8 px-4">
                       Thank you for your interest, {formData.name}. To complete your enrollment and see the full pricing, please contact us on Telegram.
                     </p>
-                    
+
                     <div className="bg-gray-50 rounded-2xl p-6 text-left mb-8 border border-gray-100">
                       <div className="text-xs font-bold text-gray-400 uppercase mb-4 tracking-widest">Transaction Summary</div>
                       <div className="flex justify-between mb-2">
